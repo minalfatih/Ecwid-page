@@ -1,15 +1,17 @@
-#Ecwid page
+# Ecwid page
 - challenge from frontend practice
 - Start sell online. With Ecwid, you get free forever, Set up your free account once, and keep it as long as you like, Seriously.
 
-#Screenshot
+## Screenshot
 ![Ecwid](./design/Ecwid.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://minalfatih.github.io/Ecwid-page/)
-- 
+- Solution URL: [Repo link](https://github.com/minalfatih/Ecwid-page)
+- Live Site URL: [Live link](https://minalfatih.github.io/Ecwid-page/)
+
+
 ### Built with
 
 - Semantic HTML5 markup
