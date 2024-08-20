@@ -1,0 +1,332 @@
+:root {
+  --green: #06945b;
+  --green-cync: #68e5a2;
+  --cream: #f1b280;
+  --blue: #395be0;
+  --yellow: #fae053;
+  --black: #000000;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+.navbar-brand p span {
+  font-size: 10px;
+  position: relative;
+  top: -8px;
+}
+header .navbar .navbar-toggler {
+  font-size: 25px;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--black);
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  font-weight: bold;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active {
+  background-color: var(--black);
+  color: var(--white);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+header .navbar .navbar-nav .nav-item .nav-link.active:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px dashed var(--black);
+  transition: 0.3s linear;
+}
+.landing h1 {
+  color: var(--black);
+  font-family: math;
+  font-size: 60px;
+  font-weight: bold;
+}
+p {
+  line-height: 1.6;
+}
+.landing p {
+  width: 50%;
+}
+.landing button,
+.sell button,
+.start .btn button {
+  background-color: var(--green);
+  color: var(--white);
+  width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid var(--black);
+}
+.landing button:hover {
+  background-color: var(--green-cync);
+  transition: 0.3s linear;
+}
+.landing .services li:nth-child(3) p svg,
+.landing .services li:nth-child(4) p svg {
+  border-right: 1px solid rgb(0 0 0 / 50%);
+  margin-right: 2px;
+  padding-right: 2px;
+}
+@media (max-width: 767px) {
+  .landing h1 {
+    font-size: 40px;
+  }
+  .landing p {
+    width: 100%;
+  }
+  .landing button {
+    width: 220px;
+    padding: 12px;
+  }
+  .landing .services {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.sell h1,
+.num .title h1,
+.start h1 {
+  color: var(--black);
+  font-size: 45px;
+  font-family: math;
+  font-weight: bold;
+}
+.sell button {
+  background-color: var(--cream);
+  color: var(--black);
+  width: 200px;
+  padding: 10px;
+}
+.grow button {
+  background-color: var(--green-cync);
+}
+.sell button:hover,
+.start .btn button:hover {
+  border-style: dashed;
+  transition: 0.3s linear;
+}
+.sell .comment {
+  background-color: var(--cream);
+  color: var(--black);
+}
+.grow .comment {
+  background-color: var(--green-cync);
+  color: var(--black);
+}
+.manage .comment,
+.manage button {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.comment {
+  padding: 3rem 6rem;
+  border: 1px solid var(--black);
+  border-radius: 50px;
+}
+.comment p {
+  width: 100%;
+}
+.comment .rate .username img {
+  width: 40px;
+}
+.grow .comment .rate p,
+.grow .comment .rate .username {
+  width: 100%;
+}
+@media (min-width: 990px) {
+  .sell .image {
+    position: relative;
+    top: 115px;
+  }
+  .comment p,
+  .grow .comment .rate {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .sell .comment {
+    border-radius: 0 0 50px 50px;
+  }
+  .comment {
+    padding: 2rem 2rem;
+  }
+  .comment p {
+    width: 100%;
+  }
+  .comment .rate {
+    flex-direction: column;
+  }
+  .comment .rate .username,
+  .comment .rate .stars {
+    width: 100%;
+  }
+  .comment .rate .stars {
+    margin-top: 10px;
+  }
+  .manage .image {
+    height: 320px;
+  }
+  .manage .comment {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 576px) {
+  .manage .image {
+    height: 240px;
+  }
+}
+.num,
+.start {
+  border: 1px solid var(--black);
+  padding: 50px 70px;
+  border-radius: 50px;
+}
+.num ul li p {
+  color: var(--black);
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0;
+}
+@media (min-width: 990px) {
+  .num .title {
+    width: 30%;
+  }
+  .num ul {
+    width: 60%;
+    gap: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .num {
+    padding: 50px 30px;
+  }
+  .num .title h1 {
+    font-size: 40px;
+  }
+  .num ul li p {
+    font-size: 50px;
+  }
+}
+.box {
+  border: 1px solid var(--black);
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.box .icon {
+  background-color: var(--yellow);
+  color: var(--black);
+  width: fit-content;
+  padding: 12px 20px;
+  font-size: 1.5rem;
+  border: 1px solid var(--black);
+}
+.box h1,
+.box a {
+  color: var(--black);
+}
+.box a {
+  position: absolute;
+  bottom: 25px;
+}
+@media (max-width: 576px) {
+  .box {
+    width: 90%;
+    height: 310px;
+  }
+}
+.start h1 {
+  width: 50%;
+  padding: 0 15px;
+}
+.start .btn button {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+@media (max-width: 990px) {
+  .start {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 50px 35px 20px;
+  }
+  .start h1 {
+    width: 100%;
+    padding: 0;
+    font-size: 30px;
+  }
+}
+footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+footer .container:first-child {
+  gap: 100px;
+  border-bottom: 1px solid rgba(255 255 255 / 20%);
+}
+footer .links ul li p {
+  font-size: 20px;
+}
+footer .links ul li a {
+  display: block;
+  padding: 5px 0;
+}
+footer ul li a {
+  color: var(--white);
+  transition: 0.3s linear;
+}
+footer ul li a:hover {
+  color: var(--yellow);
+  font-weight: bold;
+}
+footer .links .search {
+  border: 1px solid var(--white);
+}
+footer .links .search input {
+  outline: none;
+  caret-color: var(--yellow);
+  color: var(--white);
+}
+footer ul li a svg path {
+  fill: var(--white);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+footer ul li a:hover svg path {
+  fill: var(--yellow);
+}
+footer .links .social .download button {
+  border: 1px solid var(--white);
+}
+footer .links .social .download button .name p:first-child {
+  position: relative;
+  top: 5px;
+  font-size: 10px;
+}
+footer .links .social .download button img {
+  width: 30px;
+}
+@media (max-width: 990px) {
+  footer .container:first-child {
+    gap: 30px;
+  }
+  footer .links .search {
+    width: 90%;
+  }
+  footer .links .social {
+    width: 100%;
+  }
+  footer .links .social {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 767px) {
+  footer .container:last-child .row ul {
+    margin-top: 30px;
+  }
+}
